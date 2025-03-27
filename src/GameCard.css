@@ -1,0 +1,55 @@
+.GameCard .game-card {
+  background-color: #012e36; /* um tom um pouco mais claro que o fundo geral */
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin: 20px 60px 20px 60px;
+  border: 1px solid var(--heading-color);
+  transition: box-shadow 200ms ease;
+}
+
+.GameCard .game-card:hover {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.GameCard .game-info {
+  border-right: 3px double var(--heading-color);
+  padding: 20px;
+  text-align: center;
+  margin: 15px 0 8px;
+}
+
+p {
+  color: var(--heading-color);
+  opacity: 0.7;
+}
+
+.GameCard .buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.GameCard button {
+  background-color: var(--heading-color);
+  color: #003b46;
+  opacity: 0.85;
+  margin: 0 20px;
+  padding: 15px 50px;
+  border: 8px double var(--accent-color);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
+}
+
+.GameCard button:hover {
+  background-color: var(--accent-color);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.GameCard .odds {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.7;
+}
