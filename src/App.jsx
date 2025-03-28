@@ -1,10 +1,12 @@
 import { useState } from "react";
 
 import GameList from "./GameList.jsx";
+import BetTicket from "./BetTicket.jsx";
 import "./App.css";
 
 export default function App() {
   const [selectedBet, setSelectedBet] = useState(null);
+  const [betHistory, setBetHistory] = useState([]);
 
   const mockGames = [
     {
@@ -43,10 +45,16 @@ export default function App() {
     console.log("Selected Bet:", bet);
   }
 
+  function handleConfirmBet(confirmedBet) {
+    setBetHistory((prevHistory) => [confirmedBet, ...prevHistory]);
+    setSelectedBet(null); // limpa o ticket depois de confirmar
+  }
+
   return (
     <div>
       <h1>Betting Simulator</h1>
       <GameList games={mockGames} onSelectBet={handleSelectBet} />
+      <BetTicket bet={selectedBet} onConfirmBet={handleConfirmBet} />
     </div>
   );
 }
