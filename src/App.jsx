@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Navbar from "./Navbar.jsx";
 import GameList from "./GameList.jsx";
 import BetTicket from "./BetTicket.jsx";
 import "./App.css";
@@ -52,7 +53,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Betting Simulator</h1>
+      <Navbar />
       <GameList games={mockGames} onSelectBet={handleSelectBet} />
       <BetTicket bet={selectedBet} onConfirmBet={handleConfirmBet} />
     </div>

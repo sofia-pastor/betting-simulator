@@ -1,0 +1,27 @@
+.Navbar .navbar {
+  background-color: #012e36;
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
+.Navbar .navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--heading-color);
+  border-right: 3px double var(--heading-color);
+  padding-right: 30px;
+}
+
+.Navbar .navbar-nav.icon-list {
+  display: flex;
+  justify-content: space-evenly; /* ou space-between / space-around */
+  align-items: center;
+  width: 100%;
+}
+.Navbar .nav-item.icon .nav-link {
+  color: var(--heading-secondary-color);
+}
+
+.Navbar .sun-icon {
+  color: var(--accent-color);
+}
