@@ -98,9 +98,13 @@ export default function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar betHistory={betHistory} />
       <GameList games={games} onSelectBet={handleSelectBet} />
-      <BetTicket bet={selectedBet} onConfirmBet={handleConfirmBet} />
+      <BetTicket
+        bet={selectedBet}
+        setSelectedBet={setSelectedBet}
+        onConfirmBet={handleConfirmBet}
+      />
     </div>
   );
 }

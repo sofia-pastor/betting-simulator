@@ -1,3 +1,5 @@
+import BetHistory from "./BetHistory";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWallet,
@@ -8,7 +10,7 @@ import {
 
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ betHistory }) {
   return (
     <div className="Navbar">
       <nav className="navbar navbar-expand-sm">
@@ -75,21 +77,7 @@ export default function Navbar() {
                   <FontAwesomeIcon icon={faClockRotateLeft} />
                 </a>
                 <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
+                  <BetHistory history={betHistory} />
                 </ul>
               </li>
             </ul>

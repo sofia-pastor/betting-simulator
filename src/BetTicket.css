@@ -16,13 +16,6 @@
 
 .BetTicket .match-teams {
   font-size: 20px;
-  font-weight: 700;
-}
-
-.BetTicket .match-selection {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .BetTicket .confirm-button {

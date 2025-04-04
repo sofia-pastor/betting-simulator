@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./BetTicket.css";
 
-export default function BetTicket({ bet, onConfirmBet }) {
+export default function BetTicket({ bet, setSelectedBet, onConfirmBet }) {
   const [amount, setAmount] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");

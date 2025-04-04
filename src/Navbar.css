@@ -20,8 +20,45 @@
 }
 .Navbar .nav-item.icon .nav-link {
   color: var(--heading-secondary-color);
+  transition: all 200ms ease-in-out;
 }
 
-.Navbar .sun-icon {
+.Navbar .nav-item.icon .nav-link:hover,
+.Navbar .nav-item.icon .nav-link.show {
   color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.Navbar .dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+  left: auto;
+  right: 0;
+  background-color: var(--heading-color);
+  border: 3px double var(--accent-color);
+  opacity: 0.9;
+}
+
+.Navbar .dropdown-menu .dropdown-item:active {
+  background-color: transparent;
+  color: inherit;
+}
+
+.BetHistory .history-amounts {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.BetHistory .history-date {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.BetHistory .dropdown-item {
+  padding: 10px;
+  border-bottom: 2px dashed rgba(1, 46, 54, 0.3);
+}
+
+.BetHistory .dropdown-item:last-child {
+  border-bottom: none;
 }
