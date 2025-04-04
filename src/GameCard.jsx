@@ -1,4 +1,4 @@
-import "./Gamecard.css";
+import "./GameCard.css";
 
 export default function GameCard({ game, onSelectBet }) {
   console.log(game);
@@ -19,7 +19,7 @@ export default function GameCard({ game, onSelectBet }) {
           </p>
         </div>
         <div className="col-lg-8 buttons">
-          <div className="row g-3">
+          <div className="row g-3 ms-5 me-5">
             <div className="col-md-4">
               <button
                 onClick={() => onSelectBet(game, "homeWin", game.odds.homeWin)}
