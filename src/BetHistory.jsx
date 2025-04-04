@@ -1,6 +1,8 @@
 export default function BetHistory({ history }) {
   if (history.length === 0) {
-    return <p className="dropdown-item text-muted">No bets yet.</p>;
+    return (
+      <p className="dropdown-item text-muted">There isn't any bet made.</p>
+    );
   }
 
   return (

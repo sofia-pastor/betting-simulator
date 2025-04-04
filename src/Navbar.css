@@ -36,7 +36,7 @@
   right: 0;
   background-color: var(--heading-color);
   border: 3px double var(--accent-color);
-  opacity: 0.9;
+  opacity: 0.98;
 }
 
 .Navbar .dropdown-menu .dropdown-item:active {

@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 
 import "./BetTicket.css";
 
-export default function BetTicket({ bet, setSelectedBet, onConfirmBet }) {
+export default function BetTicket({
+  bet,
+  setSelectedBet,
+  onConfirmBet,
+  walletBalance,
+}) {
   const [amount, setAmount] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -28,8 +33,15 @@ export default function BetTicket({ bet, setSelectedBet, onConfirmBet }) {
   function handleSubmit(e) {
     e.preventDefault();
 
+    const amountValue = parseFloat(amount);
+
     if (!amount || isNaN(amount) || amount <= 0) {
       setErrorMessage("❌ Please enter a valid amount.");
+      return;
+    }
+
+    if (amountValue > walletBalance) {
+      setErrorMessage("❌ Insufficient funds in your wallet.");
       return;
     }
 

@@ -1,4 +1,5 @@
 import BetHistory from "./BetHistory";
+import Wallet from "./Wallet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +11,7 @@ import {
 
 import "./Navbar.css";
 
-export default function Navbar({ betHistory }) {
+export default function Navbar({ betHistory, walletBalance, onAddFunds }) {
   return (
     <div className="Navbar">
       <nav className="navbar navbar-expand-sm">
@@ -49,20 +50,11 @@ export default function Navbar({ betHistory }) {
                   <FontAwesomeIcon icon={faWallet} />
                 </a>
                 <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                  <li onClick={(e) => e.stopPropagation()}>
+                    <Wallet
+                      walletBalance={walletBalance}
+                      onAddFunds={onAddFunds}
+                    />
                   </li>
                 </ul>
               </li>

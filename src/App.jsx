@@ -10,33 +10,7 @@ export default function App() {
   const [selectedBet, setSelectedBet] = useState(null);
   const [betHistory, setBetHistory] = useState([]);
   const [games, setGames] = useState([]);
-
-  const mockGames = [
-    {
-      id: 1,
-      homeTeam: "Manchester City",
-      awayTeam: "Liverpool",
-      date: "2025-03-30",
-      time: "16:00",
-      odds: {
-        homeWin: 1.5,
-        draw: 2.5,
-        awayWin: 3.0,
-      },
-    },
-    {
-      id: 2,
-      homeTeam: "Real Madrid",
-      awayTeam: "Barcelona",
-      date: "2025-03-31",
-      time: "21:00",
-      odds: {
-        homeWin: 2.2,
-        draw: 3.1,
-        awayWin: 2.5,
-      },
-    },
-  ];
+  const [walletBalance, setWalletBalance] = useState(20);
 
   function displayGames(response) {
     setGames(
@@ -88,8 +62,13 @@ export default function App() {
   }
 
   function handleConfirmBet(confirmedBet) {
+    setWalletBalance((prevBalance) => prevBalance - confirmedBet.amount);
     setBetHistory((prevHistory) => [confirmedBet, ...prevHistory]);
     setSelectedBet(null); // limpa o ticket depois de confirmar
+  }
+
+  function handleAddFunds(amount) {
+    setWalletBalance((prevBalance) => prevBalance + amount);
   }
 
   useEffect(() => {
@@ -98,12 +77,19 @@ export default function App() {
 
   return (
     <div>
-      <Navbar betHistory={betHistory} />
+      <Navbar
+        betHistory={betHistory}
+        walletBalance={walletBalance}
+        onAddFunds={handleAddFunds}
+      />
+
       <GameList games={games} onSelectBet={handleSelectBet} />
+
       <BetTicket
         bet={selectedBet}
         setSelectedBet={setSelectedBet}
         onConfirmBet={handleConfirmBet}
+        walletBalance={walletBalance}
       />
     </div>
   );
