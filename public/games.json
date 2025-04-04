@@ -1,0 +1,214 @@
+[
+  {
+    "id": "f97bf8210d8b7cfbdc4ef13c0200d576",
+    "sport_key": "soccer_uefa_champs_league",
+    "sport_title": "UEFA Champions League",
+    "commence_time": "2025-04-08T19:00:00Z",
+    "home_team": "Arsenal",
+    "away_team": "Real Madrid",
+    "bookmakers": [
+      {
+        "key": "betfair_ex_eu",
+        "title": "Betfair",
+        "last_update": "2025-04-03T19:47:43Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 2.48
+              },
+              {
+                "name": "Real Madrid",
+                "price": 3.1
+              },
+              {
+                "name": "Draw",
+                "price": 3.55
+              }
+            ]
+          },
+          {
+            "key": "h2h_lay",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Arsenal",
+                "price": 2.5
+              },
+              {
+                "name": "Real Madrid",
+                "price": 3.2
+              },
+              {
+                "name": "Draw",
+                "price": 3.6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1ad1f20f8b22abf90405d038b86a49f2",
+    "sport_key": "soccer_uefa_champs_league",
+    "sport_title": "UEFA Champions League",
+    "commence_time": "2025-04-08T19:00:00Z",
+    "home_team": "Bayern München",
+    "away_team": "Internazionale Milano",
+    "bookmakers": [
+      {
+        "key": "betfair_ex_eu",
+        "title": "Betfair",
+        "last_update": "2025-04-03T19:47:43Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Bayern München",
+                "price": 1.91
+              },
+              {
+                "name": "Internazionale Milano",
+                "price": 4.3
+              },
+              {
+                "name": "Draw",
+                "price": 3.8
+              }
+            ]
+          },
+          {
+            "key": "h2h_lay",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Bayern München",
+                "price": 1.94
+              },
+              {
+                "name": "Internazionale Milano",
+                "price": 4.5
+              },
+              {
+                "name": "Draw",
+                "price": 3.9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7870be3e8c8ac05798da0a844571f6f7",
+    "sport_key": "soccer_uefa_champs_league",
+    "sport_title": "UEFA Champions League",
+    "commence_time": "2025-04-09T19:00:00Z",
+    "home_team": "Paris Saint Germain",
+    "away_team": "Aston Villa",
+    "bookmakers": [
+      {
+        "key": "betfair_ex_eu",
+        "title": "Betfair",
+        "last_update": "2025-04-03T19:47:43Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 7.2
+              },
+              {
+                "name": "Paris Saint Germain",
+                "price": 1.42
+              },
+              {
+                "name": "Draw",
+                "price": 5.1
+              }
+            ]
+          },
+          {
+            "key": "h2h_lay",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Aston Villa",
+                "price": 9.4
+              },
+              {
+                "name": "Paris Saint Germain",
+                "price": 1.44
+              },
+              {
+                "name": "Draw",
+                "price": 5.9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2162b24f54d968d430da71037503dfcc",
+    "sport_key": "soccer_uefa_champs_league",
+    "sport_title": "UEFA Champions League",
+    "commence_time": "2025-04-09T19:00:00Z",
+    "home_team": "Barcelona",
+    "away_team": "Borussia Dortmund",
+    "bookmakers": [
+      {
+        "key": "betfair_ex_eu",
+        "title": "Betfair",
+        "last_update": "2025-04-03T19:47:43Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Barcelona",
+                "price": 1.39
+              },
+              {
+                "name": "Borussia Dortmund",
+                "price": 8.2
+              },
+              {
+                "name": "Draw",
+                "price": 5.8
+              }
+            ]
+          },
+          {
+            "key": "h2h_lay",
+            "last_update": "2025-04-03T19:47:43Z",
+            "outcomes": [
+              {
+                "name": "Barcelona",
+                "price": 1.41
+              },
+              {
+                "name": "Borussia Dortmund",
+                "price": 9
+              },
+              {
+                "name": "Draw",
+                "price": 5.9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

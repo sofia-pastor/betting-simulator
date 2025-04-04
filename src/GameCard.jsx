@@ -1,6 +1,7 @@
 import "./Gamecard.css";
 
 export default function GameCard({ game, onSelectBet }) {
+  console.log(game);
   return (
     <div className="GameCard">
       <div className="container"></div>
@@ -10,7 +11,11 @@ export default function GameCard({ game, onSelectBet }) {
             {game.homeTeam} vs {game.awayTeam}
           </h3>
           <p>
-            {game.date} - {game.time}
+            {game.date.toLocaleDateString()} -{" "}
+            {game.date.toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}
           </p>
         </div>
         <div className="col-8 buttons">
