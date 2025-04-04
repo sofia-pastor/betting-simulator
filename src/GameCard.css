@@ -14,8 +14,8 @@
 
 .GameCard .game-info {
   border-right: 3px double var(--heading-color);
-  padding: 15px;
-  text-align: center;
+  padding: 15px 0px 15px 15px;
+  text-align: start;
   margin: 15px 0 8px;
 }
 
@@ -24,17 +24,27 @@ p {
   opacity: 0.7;
 }
 
+.GameCard .buttons {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .GameCard button {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--heading-color);
   color: #003b46;
   opacity: 0.85;
-  padding: 15px 50px;
   border: 8px double var(--accent-color);
   border-radius: 8px;
   font-weight: 700;
   font-size: 16px;
   transition: all 200ms ease-in-out;
-  width: 90%;
+  width: 100%;
+  margin: 8px auto;
 }
 
 .GameCard button:hover {
@@ -47,4 +57,5 @@ p {
   font-size: 14px;
   font-weight: 500;
   opacity: 0.7;
+  margin-top: 4px;
 }

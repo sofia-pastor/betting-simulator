@@ -85,6 +85,9 @@ footer a:hover {
   .BetTicket .game-bet-info {
     margin: 0 0 30px;
   }
+  .GameCard button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
