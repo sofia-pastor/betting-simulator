@@ -32,13 +32,6 @@ export default function Navbar({ betHistory, walletBalance, onAddFunds }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav icon-list">
-              <li className="nav-item icon">
-                <a className="nav-link active" aria-current="page" href="#">
-                  <FontAwesomeIcon icon={faMoon} /> |{" "}
-                  <FontAwesomeIcon icon={faSun} className="sun-icon" />
-                </a>
-              </li>
-
               <li className="nav-item dropdown icon">
                 <a
                   className="nav-link dropdown-toggle"

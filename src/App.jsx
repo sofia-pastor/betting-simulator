@@ -76,7 +76,7 @@ export default function App() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <Navbar
         betHistory={betHistory}
         walletBalance={walletBalance}
@@ -91,6 +91,24 @@ export default function App() {
         onConfirmBet={handleConfirmBet}
         walletBalance={walletBalance}
       />
+      <footer>
+        <div className="container">
+          <p>
+            This project was coded by{" "}
+            <a href="https://github.com/sofia-pastor" target="_blank">
+              Sofia Pastor
+            </a>{" "}
+            and is open-sourced on{" "}
+            <a
+              href="https://github.com/sofia-pastor/betting-simulator"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            .
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -79,7 +79,7 @@ export default function BetTicket({
         <div className="bet-ticket">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-6">
+              <div className="col-md-6 game-bet-info">
                 <h3>Current Bet</h3>
                 <p>
                   <span className="match-teams">
@@ -92,7 +92,7 @@ export default function BetTicket({
                   Odd: <strong>{bet.odd}</strong>
                 </p>
               </div>
-              <div className="col-6">
+              <div className="col-md-6">
                 <form onSubmit={handleSubmit}>
                   <div className="row">
                     <label>

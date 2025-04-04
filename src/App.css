@@ -22,6 +22,22 @@ h3 {
   opacity: 0.9;
 }
 
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--heading-secondary-color);
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .GameList .table-header {
   margin: 40px;
 }
@@ -54,4 +70,28 @@ h3 {
   color: white;
   border: 4px double var(--accent-color);
   transform: scale(1.005);
+}
+
+@media (max-width: 992px) {
+  .GameCard .game-info {
+    border-right: none;
+    border-bottom: 3px double var(--heading-color);
+    padding: 10px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .BetTicket .game-bet-info {
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Navbar .navbar-brand {
+    border-right: none;
+  }
+  .Navbar .navbar-nav.icon-list {
+    margin-top: 10px;
+  }
 }

@@ -4,6 +4,20 @@
   margin-bottom: 50px;
 }
 
+.Navbar .navbar-toggler {
+  border: 1px solid #003b46;
+}
+
+.Navbar .navbar-toggler:focus {
+  outline: none;
+  border: 5px solid #003b46;
+  box-shadow: none;
+}
+
+.Navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
 .Navbar .navbar-brand {
   font-size: 28px;
   font-weight: bold;
